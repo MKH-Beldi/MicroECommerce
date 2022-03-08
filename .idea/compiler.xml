@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="morders" />
+        <module name="mproducts" />
+        <module name="mpayments" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="morders" target="1.8" />
+      <module name="mpayments" target="1.8" />
+      <module name="mproducts" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="morders" options="-parameters" />
+      <module name="mpayments" options="-parameters" />
+      <module name="mproducts" options="-parameters" />
+    </option>
+  </component>
+</project>
