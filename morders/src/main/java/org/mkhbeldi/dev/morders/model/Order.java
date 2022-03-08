@@ -16,7 +16,7 @@ public class Order {
 
     private Integer productId;
 
-    @Temporal(TemporalType.TIME)
+    @Temporal(TemporalType.DATE)
     private Date orderDate;
 
     private Integer quantity;
