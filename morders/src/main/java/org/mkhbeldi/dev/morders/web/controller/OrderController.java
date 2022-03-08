@@ -17,7 +17,7 @@ public class OrderController {
     @Autowired
     IOrderService  orderService;
 
-    @PostMapping(value = "/orders")
+    @PostMapping(value = "/order")
     public ResponseEntity<Order> addOrder(@RequestBody Order orderToAdd){
         Order order = orderService.saveOrUpdateOrder(orderToAdd);
         if( order == null) throw new CannotAddOrUpdateOrderException("Unable to add or update this order");
