@@ -18,7 +18,6 @@ public class Payment {
 
     private Long amount;
 
-    @Column(unique = true)
     private String cardNumber;
 
 }
